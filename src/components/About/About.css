@@ -1,0 +1,14 @@
+.about {
+    color: #24274A;
+    font-size: 36px;
+    font-family: Jockey One;
+    font-weight: 400;
+    text-align: center;
+    word-wrap: break-word;
+    width: 60%;
+    margin: auto;
+    padding: 10% 0;
+}
+.about img {
+    margin: 30px;
+}
