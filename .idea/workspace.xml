@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70b5c201-7eaf-4dd0-a288-b6cd46d89e9e" name="Changes" comment="fix Warnings">
-      <change beforePath="$PROJECT_DIR$/src/components/Table/Table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.scss" afterDir="false" />
+    <list default="true" id="70b5c201-7eaf-4dd0-a288-b6cd46d89e9e" name="Changes" comment="fix TableStyles">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,14 @@
       <recent name="C:\Users\sayki\Desktop\FoxStudiosComponentKit\public" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="build" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="start" />
@@ -68,6 +75,10 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="npm.start" />
+      <item itemvalue="npm.build" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -109,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696153049209</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix TableStyles">
+      <created>1696153283793</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696153283793</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +148,7 @@
     <MESSAGE value="fix Table" />
     <MESSAGE value="fix Footer, add  Routes, fix TableBtn" />
     <MESSAGE value="fix Warnings" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix Warnings" />
+    <MESSAGE value="fix TableStyles" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix TableStyles" />
   </component>
 </project>
