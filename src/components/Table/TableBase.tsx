@@ -82,96 +82,98 @@ function TableBase(props: props) {
 
     if (data !== null && data !== undefined) {
         return (
-            <div className="divTable">
-                <div className="divTableBody">
-                    <div className="divTableRow">
-                        <div className={"divTableCell"}>
-                            Индекс
-                        </div>
-                        <div className={"divTableCell"}>
-                            Адрес почтового отделения
-                        </div>
-                        <div className={"divTableCell"}>
-                            Начало работы
-                        </div>
-                        <div className={"divTableCell"}>
-                            Конец работы
-                        </div>
-                    </div>
-                    {data?.map((value) => {
-                        return (
-                            <div className="divTableRow" key={value.typeId}>
-                                <div className={"divTableCell"}>
-                                    {value.postalCode}
-                                </div>
-                                <div className={"divTableCell"}>
-                                    {value.address.fullAddress}
-                                </div>
-                                <div className={"divTableCell"}>
-                                    <div className={'weekdaycont'}>
-                                        <div>Пн</div>
-                                        <div>Вт</div>
-                                        <div>Ср</div>
-                                        <div>Чт</div>
-                                        <div>Пт</div>
-                                        <div>Сб</div>
-                                        <div>Вс</div>
-                                    </div>
-                                    <div className={'weekdaycont'}>
-                                        {value.workingHours.length > 0 ? value.workingHours.map((elem) => {
-                                            return <div>
-                                                {(elem.beginWorkTime)}
-                                            </div>
-                                        }) : <div className={'weekdaycont'}>
-                                            <div>Нет данных</div>
-                                            <div>Нет данных</div>
-                                            <div>Нет данных</div>
-                                            <div>Нет данных</div>
-                                            <div>Нет данных</div>
-                                            <div>Нет данных</div>
-                                            <div>Нет данных</div>
-                                        </div>}
-                                    </div>
-
-                                </div>
-                                <div className={"divTableCell"}>
-                                    <div className={'weekdaycont'}>
-                                        <div>Пн</div>
-                                        <div>Вт</div>
-                                        <div>Ср</div>
-                                        <div>Чт</div>
-                                        <div>Пт</div>
-                                        <div>Сб</div>
-                                        <div>Вс</div>
-                                    </div>
-                                    <div className={'weekdaycont'}>
-                                        {value.workingHours.length > 0 ? value.workingHours.map((elem) => {
-                                            return <div>
-                                                {(elem.endWorkTime)}
-                                            </div>
-                                        }) : <div className={'weekdaycont'}>
-                                            <div>Нет данных</div>
-                                            <div>Нет данных</div>
-                                            <div>Нет данных</div>
-                                            <div>Нет данных</div>
-                                            <div>Нет данных</div>
-                                            <div>Нет данных</div>
-                                            <div>Нет данных</div>
-                                        </div>}
-                                    </div>
-
-                                </div>
+            <div className="container">
+                <div className="divTable">
+                    <div className="divTableBody">
+                        <div className="divTableRow">
+                            <div className={"divTableCell"}>
+                                Индекс
                             </div>
-                        )
-                    })}
+                            <div className={"divTableCell"}>
+                                Адрес почтового отделения
+                            </div>
+                            <div className={"divTableCell"}>
+                                Начало работы
+                            </div>
+                            <div className={"divTableCell"}>
+                                Конец работы
+                            </div>
+                        </div>
+                        {data?.map((value) => {
+                            return (
+                                <div className="divTableRow content" key={value.typeId}>
+                                    <div className={"divTableCell"}>
+                                        {value.postalCode}
+                                    </div>
+                                    <div className={"divTableCell"}>
+                                        {value.address.fullAddress}
+                                    </div>
+                                    <div className={"divTableCell"}>
+                                        <div className={'weekdaycont'}>
+                                            <div>Пн</div>
+                                            <div>Вт</div>
+                                            <div>Ср</div>
+                                            <div>Чт</div>
+                                            <div>Пт</div>
+                                            <div>Сб</div>
+                                            <div>Вс</div>
+                                        </div>
+                                        <div className={'weekdaycont'}>
+                                            {value.workingHours.length > 0 ? value.workingHours.map((elem) => {
+                                                return <div>
+                                                    {(elem.beginWorkTime)}
+                                                </div>
+                                            }) : <div className={'weekdaycont'}>
+                                                <div>Нет данных</div>
+                                                <div>Нет данных</div>
+                                                <div>Нет данных</div>
+                                                <div>Нет данных</div>
+                                                <div>Нет данных</div>
+                                                <div>Нет данных</div>
+                                                <div>Нет данных</div>
+                                            </div>}
+                                        </div>
+
+                                    </div>
+                                    <div className={"divTableCell"}>
+                                        <div className={'weekdaycont'}>
+                                            <div>Пн</div>
+                                            <div>Вт</div>
+                                            <div>Ср</div>
+                                            <div>Чт</div>
+                                            <div>Пт</div>
+                                            <div>Сб</div>
+                                            <div>Вс</div>
+                                        </div>
+                                        <div className={'weekdaycont'}>
+                                            {value.workingHours.length > 0 ? value.workingHours.map((elem) => {
+                                                return <div>
+                                                    {(elem.endWorkTime)}
+                                                </div>
+                                            }) : <div className={'weekdaycont'}>
+                                                <div>Нет данных</div>
+                                                <div>Нет данных</div>
+                                                <div>Нет данных</div>
+                                                <div>Нет данных</div>
+                                                <div>Нет данных</div>
+                                                <div>Нет данных</div>
+                                                <div>Нет данных</div>
+                                            </div>}
+                                        </div>
+
+                                    </div>
+                                </div>
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         )
     } else {
         return (
-            <>
-                Загрузка
-            </>
+            <div className={'main'}>
+                <span className="loader"></span>
+            </div>
         )
     }
 }

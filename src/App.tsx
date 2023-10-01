@@ -11,11 +11,11 @@ function App() {
   return (
     <>
       <div>
-        <Cap></Cap>
+        <Cap/>
 
         <TableRenderer/>
-
-        <Footer></Footer>
+        {/*<About/>*/}
+        <Footer/>
       </div>
     </>
   );

@@ -1,9 +1,24 @@
 .divTable{
   display: table;
-  width: 100%;
+  width: 80%;
+  margin: 15px auto;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+
+}
+.close{
+  position: absolute;
+  right: 40px;
+  border: 1px solid #24274A;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
 }
 .divTableRow {
   display: table-row;
+  text-align: center;
+  color: #24274A;
+
 }
 .divTableHeading {
   background-color: #EEE;
@@ -33,4 +48,95 @@
 .weekdaycont {
   float: left;
   padding-left: 5px;
+}
+.inp {
+  width: 70%;
+  margin: 10% auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.inp h2 {
+  color: #24274A;
+}
+.inp input {
+  text-align: center;
+  font-size: 20px;
+  border: #24274A 1px solid;
+  border-radius: 5px;
+  height: 35px;
+  width: 380px;
+  margin: auto auto 20px auto;
+}
+.inp button {
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  margin: auto;
+  color: #FFFFFF;
+  background-color: #24274A;
+  border: #24274A 1px solid;
+  border-radius: 5px;
+}
+@media (max-width: 560px) {
+  .inp {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 800px;
+  background-color: #24274A;
+  margin: auto;
+}
+
+.loader {
+  --loader-size: 50px;
+  --loader-border-size: 4px;
+  --loader-border-color: white;
+  width: var(--loader-size);
+  height: var(--loader-size);
+  border: var(--loader-border-size) solid var(--loader-border-color);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  background-color: transparent;
+  border-radius: 50%;
+  position: relative;
+  animation: rotateX 1s infinite linear;
+}
+
+.loader::before {
+  content:"";
+  border: var(--loader-border-size) solid var(--loader-border-color);
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  animation: rotateX 0.5s infinite linear reverse;
+}
+
+@keyframes rotateX {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
 }

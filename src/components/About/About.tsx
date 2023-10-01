@@ -5,11 +5,17 @@ import ist from './ist_logo.jpg'
 
 export function About() {
     return (
-        <div className="about">
-            <img src={fox} width={150}/>
-            <img src={ist} width={150}/>
-            <div>Сделано FoxStudios при поддержке кафедры ИСТ</div>
+        <div>
+            <h1 className={'h1'}>О нас</h1>
+            <div className="about">
+                <div className={'about1'}>
+                    <img src={fox} width={320}/>
+                    <img src={ist} width={320}/>
+                </div>
 
+                <div>Сделано FoxStudios при поддержке кафедры ИСТ</div>
+
+            </div>
         </div>
     )
 }

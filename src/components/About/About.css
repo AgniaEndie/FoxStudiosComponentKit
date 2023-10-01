@@ -6,9 +6,33 @@
     text-align: center;
     word-wrap: break-word;
     width: 60%;
-    margin: auto;
-    padding: 10% 0;
+    margin: 100px auto;
 }
 .about img {
-    margin: 30px;
+    margin: 30px 50px;
+}
+.h1 {
+    margin: 0 0 0 20px;
+    padding: 20px 0 0 0;
+}
+@media (max-width: 560px) {
+    .about {
+        color: #24274A;
+        font-size: 20px;
+        font-family: Jockey One;
+        font-weight: 400;
+        text-align: center;
+        word-wrap: break-word;
+        width: 70%;
+        margin: 10px auto;
+
+    }
+    .about1 {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .about img {
+        width: 100px;
+        margin: 10px;
+    }
 }

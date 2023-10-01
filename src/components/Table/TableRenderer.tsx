@@ -2,6 +2,7 @@ import Button from "../Button/Button";
 import {useEffect, useState} from "react";
 import {getDataFromApi} from "../../api/Api";
 import TableBase from "./TableBase";
+import close from './close.svg';
 
 interface address {
     addressGuid: String,
@@ -93,15 +94,16 @@ export default function TableRenderer(){
     function Modal(){
         if(handleModal){
             return(
-                <>
-                    <input placeholder={"индекс почтового отделения"} value={index} onChange={handleIndex}/>
+                <div className={'inp'}>
+                    <h2>Поиск по индексу</h2>
+                    <input placeholder={"Введите индекс почтового отделения"} value={index} onChange={handleIndex}/>
                     <Button onClick={()=>{
                         if (index != null) {
                             getDataApi(index, handleData)
                         }
                         handleShowModal(false)
                     }} label={"Найти"}/>
-                </>
+                </div>
             )
         }else{
             return(
@@ -113,9 +115,10 @@ export default function TableRenderer(){
     return(
        <>
            {Modal()}
-           <div>
-               <button onClick={()=>handleShowModal(true)} title={"Закрыть"}/>
+           <div className={'div-tabl'}>
+               {!handleModal ?  <button className={'close'} onClick={()=>handleShowModal(true)} value={"Закрыть"}><img src={close} alt=""/></button> : <></>}
                {!handleModal ? <TableBase data={dataRe}/> : <></>}
+
            </div>
        </>
     )
