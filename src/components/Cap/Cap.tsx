@@ -5,8 +5,8 @@ export function Cap() {
     return(
         <div className="header">
             <img className='logo' src={logo} width={40}/>
-            <a href='#'>Главная</a>
-            <a href='#'>О нас</a>
+            <a href='/'>Главная</a>
+            <a href='/about'>О нас</a>
 
         </div>
     )
