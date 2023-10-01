@@ -1,7 +1,7 @@
 .about {
     color: #24274A;
     font-size: 36px;
-    font-family: Jockey One;
+    font-family: Jockey One, serif;
     font-weight: 400;
     text-align: center;
     word-wrap: break-word;
@@ -19,7 +19,7 @@
     .about {
         color: #24274A;
         font-size: 20px;
-        font-family: Jockey One;
+        font-family: Jockey One, serif;
         font-weight: 400;
         text-align: center;
         word-wrap: break-word;
